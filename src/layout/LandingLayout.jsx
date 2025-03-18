@@ -12,7 +12,7 @@ const MainLayout = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentImage((prev) => (prev + 1) % images.length);
-        }, 20000); // Change image every 20 seconds
+        }, 60000); // Change image every 60 seconds (3 times slower)
 
         return () => clearInterval(interval); // Cleanup interval on unmount
     }, [images.length]);
@@ -28,7 +28,7 @@ const MainLayout = () => {
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',
-                    animation: 'zoom 40s linear infinite', // Linear for smooth animation
+                    animation: 'zoom 60s linear infinite', // 60s for 3 times slower
                     backgroundBlendMode: 'overlay', // Add blend mode
                     backgroundColor: 'rgba(0, 0, 0, 0.4)', // Add a color to blend with
                 }}
