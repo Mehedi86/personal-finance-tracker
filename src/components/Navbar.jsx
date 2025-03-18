@@ -2,6 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowRight } from "react-icons/fa6";
 import { IoLocationOutline } from "react-icons/io5";
+import { AiOutlineMail } from "react-icons/ai";
+import { MdOutlinePhonelinkRing } from "react-icons/md";
+import { TiSocialFacebook } from "react-icons/ti";
+import { IoShareSocialOutline } from "react-icons/io5";
+import { TiSocialLinkedin } from "react-icons/ti";
+import { FaInstagram } from "react-icons/fa";
 
 const Navbar = () => {
     const navItem = (
@@ -48,25 +54,37 @@ const Navbar = () => {
                 <a className="btn btn-ghost text-4xl p-12">SpendSence</a>
             </div>
             <div className="flex w-full">
-                <div className="hidden lg:flex flex-grow">
+                <div className="hidden lg:flex flex-grow items-center">
                     <div className='w-full'>
-                        <div className='bg-[#0A0A0A] flex justify-
-                        between text-white'>
+                        <div className='bg-[#082F49] flex justify-between text-white px-4'>
                             <div className='flex gap-4 py-2'>
                                 <p className='flex items-center gap-2'><IoLocationOutline /> Dhaka, Bangladesh</p>
-                                <p className='flex items-center gap-2'><IoLocationOutline /> Dhaka, Bangladesh</p>
-                                <p className='flex items-center gap-2'><IoLocationOutline /> Dhaka, Bangladesh</p>
+                                <p className='flex items-center gap-2'><AiOutlineMail />Spendsence.com</p>
+                                <p className='flex items-center gap-2'><MdOutlinePhonelinkRing />+689-410-8585</p>
+                            </div>
+                            <div className='flex gap-4 py-2 items-center'>
+                                <TiSocialFacebook size={25}/>
+                                <TiSocialLinkedin size={25}/>
+                                <FaInstagram size={20}/>
+                                <IoShareSocialOutline size={20}/>
+                                <Link>Help</Link>
+                                <Link>About</Link>
+                                <Link>Content</Link>
                             </div>
                         </div>
                         {/* navItem and get start button */}
-                        <div className='flex justify-between py-2'>
+                        <div className='flex justify-between py-2 border-b-2 border-gray-200'>
                             <ul className="menu menu-horizontal px-6 text-xl font-semibold gap-4">
                                 {navItem}
                             </ul>
-                            <div className='w-40 h-12 rounded-4xl border-2 flex items-center justify-center mx-6'>
-                                <div className='flex gap-4 items-center cursor-pointer'>
+                            <div className="relative w-40 h-12 flex items-center justify-center mx-6 cursor-pointer group border-2 border-neutral-400 rounded-full">
+                                {/* Background animation */}
+                                <div className="absolute inset-0 bg-neutral-400 transition-all duration-500 ease-in-out scale-x-0 group-hover:scale-x-100 origin-left rounded-full"></div>
+
+                                {/* Text and icon */}
+                                <div className="relative flex gap-2 items-center text-neutral-400 group-hover:text-white transition-all duration-500">
+                                    <span>Get Started</span>
                                     <FaArrowRight />
-                                    <button className='mb-1 cursor-pointer'>Let's Go</button>
                                 </div>
                             </div>
                         </div>
