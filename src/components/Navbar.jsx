@@ -9,6 +9,7 @@ import { IoShareSocialOutline } from "react-icons/io5";
 import { TiSocialLinkedin } from "react-icons/ti";
 import { FaInstagram } from "react-icons/fa";
 
+
 const Navbar = () => {
     const navItem = (
         <>
@@ -63,13 +64,13 @@ const Navbar = () => {
                                 <p className='flex items-center gap-2'><MdOutlinePhonelinkRing />+689-410-8585</p>
                             </div>
                             <div className='flex gap-4 py-2 items-center'>
-                                <TiSocialFacebook size={25}/>
-                                <TiSocialLinkedin size={25}/>
-                                <FaInstagram size={20}/>
-                                <IoShareSocialOutline size={20}/>
                                 <Link>Help</Link>
                                 <Link>About</Link>
                                 <Link>Content</Link>
+                                <TiSocialFacebook size={25} />
+                                <TiSocialLinkedin size={25} />
+                                <FaInstagram size={20} />
+                                <IoShareSocialOutline size={20} />
                             </div>
                         </div>
                         {/* navItem and get start button */}
@@ -86,6 +87,11 @@ const Navbar = () => {
                                     <span>Get Started</span>
                                     <FaArrowRight />
                                 </div>
+
+                                {/* Remove border on hover */}
+                                <style>
+                                    {`.group:hover {border-color: transparent !important;}`}
+                                </style>
                             </div>
                         </div>
                     </div>
