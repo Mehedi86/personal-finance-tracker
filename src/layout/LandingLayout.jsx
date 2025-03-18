@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Outlet } from 'react-router-dom';
-import image1 from '/13280-NOWKBG.jpg';
-import image2 from '/8932789.jpg';
-import image3 from '/plant-growing-coins-glass-jar.jpg';
+import image1 from '/banner-1.jpg';
+import image2 from '/banner-2.jpg';
+import image3 from '/banner-3.jpg';
 import Navbar from '../components/Navbar';
 
 const MainLayout = () => {

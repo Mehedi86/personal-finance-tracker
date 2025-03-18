@@ -52,7 +52,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 {/* Brand Logo */}
-                <a className="btn btn-ghost text-4xl p-12">SpendSence</a>
+                <a className="btn btn-ghost text-4xl p-12 text-white">SpendSence</a>
             </div>
             <div className="flex w-full">
                 <div className="hidden lg:flex flex-grow items-center">
@@ -75,15 +75,15 @@ const Navbar = () => {
                         </div>
                         {/* navItem and get start button */}
                         <div className='flex justify-between py-2 border-b-2 border-gray-200'>
-                            <ul className="menu menu-horizontal px-6 text-xl font-semibold gap-4">
+                            <ul className="menu menu-horizontal px-6 text-xl font-semibold gap-4 text-white">
                                 {navItem}
                             </ul>
-                            <div className="relative w-40 h-12 flex items-center justify-center mx-6 cursor-pointer group border-2 border-neutral-400 rounded-full">
+                            <div className="relative w-40 h-12 flex items-center justify-center mx-6 cursor-pointer group border-2 border-white rounded-full">
                                 {/* Background animation */}
-                                <div className="absolute inset-0 bg-neutral-400 transition-all duration-500 ease-in-out scale-x-0 group-hover:scale-x-100 origin-left rounded-full"></div>
+                                <div className="absolute inset-0 bg-white transition-all duration-500 ease-in-out scale-x-0 group-hover:scale-x-100 origin-left rounded-full"></div>
 
                                 {/* Text and icon */}
-                                <div className="relative flex gap-2 items-center text-neutral-400 group-hover:text-white transition-all duration-500">
+                                <div className="relative flex gap-2 items-center text-white group-hover:text-black transition-all duration-500">
                                     <span>Get Started</span>
                                     <FaArrowRight />
                                 </div>
