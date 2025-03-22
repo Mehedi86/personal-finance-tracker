@@ -14,25 +14,25 @@ const Navbar = () => {
     const navItem = (
         <>
             <Link className="relative group">Home
-                <span className="absolute -bottom-2 left-0 w-0 h-[3px] bg-gray-200 group-hover:w-full transition-all duration-500"></span>
+                <span className="absolute -bottom-2 left-0 w-0 h-[3px] bg-gray-200 group-hover:w-full transition-all duration-600"></span>
             </Link>
             <Link className="relative group">Dashboard
-                <span className="absolute -bottom-2 left-0 w-0 h-[3px] bg-gray-200 group-hover:w-full transition-all duration-500"></span>
+                <span className="absolute -bottom-2 left-0 w-0 h-[3px] bg-gray-200 group-hover:w-full transition-all duration-600"></span>
             </Link>
             <Link className="relative group">Transactions
-                <span className="absolute -bottom-2 left-0 w-0 h-[3px] bg-gray-200 group-hover:w-full transition-all duration-500"></span>
+                <span className="absolute -bottom-2 left-0 w-0 h-[3px] bg-gray-200 group-hover:w-full transition-all duration-600"></span>
             </Link>
             <Link className="relative group">Budget
-                <span className="absolute -bottom-2 left-0 w-0 h-[3px] bg-gray-200 group-hover:w-full transition-all duration-500"></span>
+                <span className="absolute -bottom-2 left-0 w-0 h-[3px] bg-gray-200 group-hover:w-full transition-all duration-600"></span>
             </Link>
             <Link className="relative group">Reports
-                <span className="absolute -bottom-2 left-0 w-0 h-[3px] bg-gray-200 group-hover:w-full transition-all duration-500"></span>
+                <span className="absolute -bottom-2 left-0 w-0 h-[3px] bg-gray-200 group-hover:w-full transition-all duration-600"></span>
             </Link>
             <Link className="relative group">Settings
-                <span className="absolute -bottom-2 left-0 w-0 h-[3px] bg-gray-200 group-hover:w-full transition-all duration-500"></span>
+                <span className="absolute -bottom-2 left-0 w-0 h-[3px] bg-gray-200 group-hover:w-full transition-all duration-600"></span>
             </Link>
             <Link className="relative group">Login
-                <span className="absolute -bottom-2 left-0 w-0 h-[3px] bg-gray-200 group-hover:w-full transition-all duration-500"></span>
+                <span className="absolute -bottom-2 left-0 w-0 h-[3px] bg-gray-200 group-hover:w-full transition-all duration-600"></span>
             </Link>
 
         </>
