@@ -30,7 +30,7 @@ const MainLayout = () => {
                     backgroundPosition: 'center',
                     animation: 'zoom 60s linear infinite', // 60s for 3 times slower
                     backgroundBlendMode: 'overlay', // Add blend mode
-                    backgroundColor: 'rgba(0, 0, 0, 0.4)', // Add a color to blend with
+                    backgroundColor: 'rgba(0, 0, 0, 0.6)', // Add a color to blend with
                 }}
             ></div>
 
